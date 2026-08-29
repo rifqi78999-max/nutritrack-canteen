@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Riwayat Mingguan - NutriTrack</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container py-4">
+
+    <div class="card shadow p-4">
+
+        <h3 class="text-success fw-bold text-center mb-1">
+            📅 Riwayat Mingguan
+        </h3>
+
+        <p class="text-muted text-center mb-4">
+            Ringkasan konsumsi minggu ini
+        </p>
+
+
+        <!-- TOTAL NATRIUM -->
+
+        <div class="card shadow-sm mb-3">
+
+            <div class="card-body">
+
+                <p class="mb-1">
+                    🧂 <b>Total Natrium</b>
+                </p>
+
+                <h3 id="totalNatrium"
+                    class="text-success fw-bold">
+                    0 mg
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- RATA-RATA SKOR -->
+
+        <div class="card shadow-sm mb-3">
+
+            <div class="card-body">
+
+                <p class="mb-1">
+                    ❤️ <b>Rata-rata Skor</b>
+                </p>
+
+                <h3 id="rataSkor"
+                    class="text-success fw-bold">
+                    0/100
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOTAL PEMBELIAN -->
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <p class="mb-1">
+                    🛒 <b>Total Pembelian</b>
+                </p>
+
+                <h3 id="jumlahPembelian"
+                    class="text-success fw-bold">
+                    0 Menu
+                </h3>
+
+            </div>
+
+        </div>
+
+      <!-- STATUS KONSUMSI -->
+
+<div class="card shadow-sm mb-4" id="cardStatus">
+
+    <div class="card-body">
+
+        <h5 id="judulStatus" class="fw-bold mb-2">
+            ⚠️ Status Konsumsi
+        </h5>
+
+        <p id="isiStatus" class="mb-0">
+            Belum ada pembelian minggu ini.
+        </p>
+
+    </div>
+
+</div>
+</div>
+
+        <!-- TOMBOL KEMBALI -->
+
+        <a href="profil.html"
+           class="btn btn-success">
+
+            ← Kembali ke Profil
+
+        </a>
+
+    </div>
+
+</div>
+
+<script src="js/minggu.js"></script>
+<script src="js/mingguan.js"></script>
+
+</body>
+
+</html>

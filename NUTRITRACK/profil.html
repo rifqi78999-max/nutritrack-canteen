@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Profil Siswa</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container py-5">
+
+<div class="card shadow p-4">
+
+<h2 class="text-success text-center">
+👤 Profil Siswa
+</h2>
+
+<div class="mb-3">
+
+    <label class="fw-bold text-success">
+        Nama
+    </label>
+
+    <div id="nama"></div>
+
+</div>
+
+<div class="mb-3">
+
+    <label class="fw-bold text-success">
+        Kelas
+    </label>
+
+    <div id="kelas"></div>
+
+</div>
+
+<div class="mb-3">
+
+    <label class="fw-bold text-success">
+        NISN
+    </label>
+
+    <div id="nisn"></div>
+
+</div>
+
+<div class="mb-3">
+
+    <label class="fw-bold text-success">
+        Absen
+    </label>
+
+    <div id="absen"></div>
+
+</div>
+
+<!-- MENU RIWAYAT -->
+
+<div class="card shadow-sm mt-4">
+
+    <a href="mingguan.html"
+       class="text-decoration-none text-dark">
+
+        <div class="card-body d-flex justify-content-between align-items-center">
+
+            <div>
+
+                <h5 class="mb-1">
+                    📅 Riwayat Mingguan
+                </h5>
+
+                <small class="text-muted">
+                    Lihat ringkasan konsumsi minggu ini
+                </small>
+
+            </div>
+
+            <h3 class="mb-0 text-success">
+                ›
+            </h3>
+
+        </div>
+
+    </a>
+
+</div>
+
+
+<div class="card shadow-sm mt-3">
+
+    <a href="riwayat.html"
+       class="text-decoration-none text-dark">
+
+        <div class="card-body d-flex justify-content-between align-items-center">
+
+            <div>
+
+                <h5 class="mb-1">
+                    🛒 Riwayat Pembelian
+                </h5>
+
+                <small class="text-muted">
+                    Lihat semua pembelian
+                </small>
+
+            </div>
+
+            <h3 class="mb-0 text-success">
+                ›
+            </h3>
+
+        </div>
+
+    </a>
+
+</div>
+
+<div class="card shadow-sm mt-3">
+
+    <button
+        id="btnGantiAkun"
+        class="btn btn-outline-danger m-3">
+
+        🔄 Ganti Akun
+
+    </button>
+
+</div>
+</div>
+
+</div>
+
+<script src="js/profil.js"></script>
+
+</body>
+
+</html>

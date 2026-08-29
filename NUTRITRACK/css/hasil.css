@@ -1,0 +1,88 @@
+/* Background khusus halaman hasil */
+body{
+    background: linear-gradient(135deg,#16a34a,#22c55e,#86efac);
+    min-height:100vh;
+}
+
+/* Lebar halaman */
+.container{
+    max-width:700px;
+}
+
+/* Card utama */
+.card{
+    border:none;
+    border-radius:25px;
+    background:white;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+    animation:muncul .4s ease;
+    transition:.3s;
+}
+
+.stand-card{
+    background: linear-gradient(135deg,#16a34a,#22c55e) !important;
+    color:white;
+    padding:10px;
+}
+
+.stand-card #stand{
+    color:white !important;
+}
+
+.stand-card #menu{
+    color:white !important;
+}
+
+/* Nama stand */
+#stand{
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* Nama menu */
+#menu{
+    font-size:20px;
+    margin-top:8px;
+}
+
+/* Kandungan gizi */
+#natrium,
+#lemak,
+#gula,
+#kalori,
+#serat{
+    font-size:18px;
+    padding:10px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+#serat{
+    border-bottom:none;
+}
+
+/* Judul */
+h2{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+h5{
+    font-weight:600;
+}
+
+@keyframes muncul{
+    .card:hover{
+    transform:translateY(-5px);
+}
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
