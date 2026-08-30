@@ -4,6 +4,7 @@
 
 let daftar = document.getElementById("daftarRiwayat");
 
+const nisnsiswa = localstorage.getItem("nis");
 let riwayat =
     JSON.parse(localStorage.getItem("riwayat")) || [];
 
