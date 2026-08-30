@@ -2,6 +2,7 @@
 // RIWAYAT MINGGUAN
 // ==========================
 
+const nisSiswa = localstorage.getItem("nis")
 let riwayat =
     JSON.parse(localStorage.getItem("riwayat")) || [];
 
