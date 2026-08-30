@@ -68,8 +68,6 @@ if (!mingguTersimpan) {
 
 else if (mingguTersimpan !== mingguSekarang) {
 
-    localStorage.removeItem("riwayat");
-
     localStorage.setItem(
         "mingguAktif",
         mingguSekarang
