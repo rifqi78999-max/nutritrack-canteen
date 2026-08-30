@@ -4,7 +4,7 @@
 
 const nisSiswa = localStorage.getItem("nis")
 let riwayat =
-    JSON.parse(localStorage.getItem("riwayat")) || [];
+    JSON.parse(localStorage.getItem("riwayat_" + nisSiswa)) || [];
 
 let totalNatrium = 0;
 let totalSkor = 0;
