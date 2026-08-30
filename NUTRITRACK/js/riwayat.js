@@ -2,11 +2,14 @@
 // RIWAYAT PEMBELIAN
 // ==========================
 
-let daftar = document.getElementById("daftarRiwayat");
+const nisSiswa = localStorage.getItem("nis");
 
-const nisnsiswa = localStorage.getItem("nis");
-let riwayat =
-    JSON.parse(localStorage.getItem("riwayat")) || [];
+const daftar = document.getElementById("daftarRiwayat");
+
+const riwayat =
+    JSON.parse(
+        localStorage.getItem("riwayat_" + nisSiswa)
+    ) || [];
 
 
 // Jika belum ada pembelian
@@ -55,7 +58,6 @@ else {
                             </div>
                         </div>
 
-
                         <div class="col-6 mb-3">
                             <small class="text-muted">
                                 Lemak
@@ -65,7 +67,6 @@ else {
                                 ${item.lemak} g
                             </div>
                         </div>
-
 
                         <div class="col-6 mb-3">
                             <small class="text-muted">
@@ -77,7 +78,6 @@ else {
                             </div>
                         </div>
 
-
                         <div class="col-6 mb-3">
                             <small class="text-muted">
                                 Kalori
@@ -88,7 +88,6 @@ else {
                             </div>
                         </div>
 
-
                         <div class="col-6">
                             <small class="text-muted">
                                 Serat
@@ -98,7 +97,6 @@ else {
                                 ${item.serat} g
                             </div>
                         </div>
-
 
                         <div class="col-6">
                             <small class="text-muted">
