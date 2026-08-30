@@ -5,7 +5,7 @@ document.getElementById("kelas").innerHTML =
 localStorage.getItem("kelas");
 
 document.getElementById("nisn").innerHTML =
-localStorage.getItem("nisn");
+localStorage.getItem("nis");
 
 document.getElementById("absen").innerHTML =
 localStorage.getItem("absen");
@@ -28,7 +28,7 @@ document
 
     localStorage.removeItem("sudahLogin");
     localStorage.removeItem("nama");
-    localStorage.removeItem("nisn");
+    localStorage.removeItem("nis");
     localStorage.removeItem("kelas");
     localStorage.removeItem("absen");
 
@@ -42,6 +42,7 @@ document
 
 let totalNatrium = 0;
 let totalSkor = 0;
+const nisSiswa = localstorage.getItem("nis");
 let riwayat =
 JSON.parse(localStorage.getItem("riwayat")) || [];
 
