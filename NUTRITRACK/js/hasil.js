@@ -187,7 +187,7 @@ document
 .getElementById("btnCatat")
 .addEventListener("click", function(){
 
-   const nisnSiswa = localStorage.getItem("nisn");
+   const nisnSiswa = localStorage.getItem("nis");
 
 let riwayat =
 JSON.parse(localStorage.getItem("riwayat_" + nisnSiswa)) || [];
